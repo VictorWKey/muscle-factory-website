@@ -15,8 +15,11 @@ function NavBar() {
   const inactiveStyle = "py-0.5 px-4 rounded-lg text-white font-bold hover:underline hover:underline-offset-8 hover:text-primarylight hover:decoration-2 transition duration-300 ease-linear";
 
   return (
-    <nav className='flex justify-end sm:justify-center w-full h-auto py-3 bg-secondarydark fixed top-0 '>
-      <ul className='hidden sm:flex justify-center gap-6'>
+    <nav className='flex justify-end sm:justify-between sm:items-center w-full h-auto bg-secondarydark fixed top-0 z-[10] animate-fade-down animate-once animate-ease-in-out'>
+      <figure className='ml-6 size-14 p-2'>
+        <img className='size-full object-cover' src="../../../public/muscle-factory-logo.png" alt="" />
+      </figure>
+      <ul className='hidden sm:flex justify-center gap-6 mr-16'>
         <li >
           <NavLink 
             to="/"
@@ -49,7 +52,7 @@ function NavBar() {
             to="/membresias"
             className = {({isActive}) => isActive ? activeStyle : inactiveStyle}
           >
-              Membresias
+              Membresías
           </NavLink>
         </li>
 
@@ -63,7 +66,7 @@ function NavBar() {
         </li>
       </ul>
       <div 
-        className='size-10 mx-4 sm:hidden'
+        className='size-10 my-2 mx-4 sm:hidden'
         onClick={() => setIsMovilMenuOpen(true)}
       >
         <Menu/>

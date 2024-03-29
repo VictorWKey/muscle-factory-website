@@ -14,7 +14,7 @@ function MovilMenu() {
   
 
   return (
-    <div className={`z-50 w-screen h-screen bg-secondarydark fixed top-0 flex flex-col p-3 items-start  transition-transform duration-300 sm:hidden transform ${isMovilMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+    <div className={`z-50 w-full h-full bg-secondarydark fixed top-0 flex flex-col p-3 items-start  transition-transform duration-300 sm:hidden transform ${isMovilMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
       <div onClick={() => setIsMovilMenuOpen(false)} className='self-end mb-14'>
         <div className='size-12'>
           <Close/>
