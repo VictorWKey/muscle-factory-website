@@ -18,7 +18,7 @@ function Inicio() {
 
 
       <div className='h-full w-auto max-w-7xl flex flex-col justify-center items-center gap-5'>
-        <h1 className='text-primarylight text-8xl font-extrabold flex gap-5 flex-wrap animate-fade-down animate-once animate-ease-in-out'>
+        <h1 className='text-primarylight xl:text-7xl 2xl:text-8xl font-extrabold flex gap-5 flex-wrap animate-fade-down animate-once animate-ease-in-out'>
           MUSCLE 
           <span 
             className='text-transparent'
@@ -27,9 +27,9 @@ function Inicio() {
             FACTORY
           </span>
         </h1>
-        <h2 className='text-white font-extrabold text-4xl animate-fade-down animate-once animate-ease-in-out'>GIMNASIO Y TIENDA DE SUPLEMENTOS</h2>
+        <h2 className='text-white font-extrabold xl:text-3xl 2xl:text-4xl animate-fade-down animate-once animate-ease-in-out'>GIMNASIO Y TIENDA DE SUPLEMENTOS</h2>
       
-        <h3 className='text-white font-extrabold text-xl flex gap-2 animate-fade-up animate-once animate-ease-in-out'>
+        <h3 className='text-white font-extrabold xl:text-lg 2xl:text-xl flex gap-2 animate-fade-up animate-once animate-ease-in-out'>
           ABRIMOS 
           <span className='text-primarylight font-extrabold text-xl'>
             TODOS LOS DÍAS
