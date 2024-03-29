@@ -6,6 +6,8 @@ import Suplementos from '../Suplementos';
 import Membresias from '../Membresias';
 import Contacto from '../Contacto';
 import NotFound from '../NotFound';
+import NavBar from '../../components/NavBar';
+import MovilMenu from '../../components/MovilMenu';
 
 const AppRoutes = () => {
   return useRoutes([
@@ -24,6 +26,8 @@ export default function App() {
     <ShopProvider>
       <BrowserRouter>
         <AppRoutes/>
+        <NavBar/>
+        <MovilMenu/>
       </BrowserRouter>
     </ShopProvider>
   )

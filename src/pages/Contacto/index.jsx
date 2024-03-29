@@ -3,7 +3,7 @@ import React from 'react'
 
 function Contacto() {
   return (
-    <div>Contacto</div>
+    <div><span className='text-primarylight'>Muscle</span> <span className='text-secondarylight'>Factory</span></div>
   )
 }
 

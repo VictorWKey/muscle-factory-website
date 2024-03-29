@@ -8,12 +8,13 @@ export const ShopContext = createContext();
 
 export const ShopProvider = ({children}) => {
 
-  const [counter, setCounter] = useState(0);
+  // Movil Menu NavBar
+  const [isMovilMenuOpen, setIsMovilMenuOpen] = useState(false);
   
   return (
     <ShopContext.Provider value = {{
-      counter,
-      setCounter
+      isMovilMenuOpen, 
+      setIsMovilMenuOpen
     }}>
       {children}
     </ShopContext.Provider>
