@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ShopContext } from '../../context';
 import Menu from '../icons/Menu';
 
@@ -15,10 +15,13 @@ function NavBar() {
   const inactiveStyle = "py-0.5 px-4 rounded-lg text-white font-bold hover:underline hover:underline-offset-8 hover:text-primarylight hover:decoration-2 transition duration-300 ease-linear";
 
   return (
-    <nav className='flex justify-end sm:justify-between sm:items-center w-full h-auto bg-secondarydark fixed top-0 z-[10] animate-fade-down animate-once animate-ease-in-out'>
-      <figure className='ml-6 size-14 p-2'>
-        <img className='size-full object-cover' src="../../../public/muscle-factory-logo.png" alt="" />
-      </figure>
+    <nav className='flex justify-between sm:items-center w-full h-auto bg-secondarydark fixed top-0 z-[10] animate-fade-down animate-once animate-ease-in-out'>
+      <Link to="/">
+        <figure className='ml-2 sm:ml-6 size-14 p-2 z-50 hover:cursor-pointer'>
+          <img className='size-full object-cover' src="../../../public/muscle-factory-logo.png" alt="" />
+        </figure>
+      </Link>
+      
       <ul className='hidden sm:flex justify-center gap-6 mr-16'>
         <li >
           <NavLink 
