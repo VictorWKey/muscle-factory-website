@@ -14,7 +14,7 @@ function PorQue() {
 Contamos con estacionamiento para motocicletas, baños privados, regaderas privadas y tienda de suplementos.</p>
         <div className='w-full flex flex-col sm:flex-row gap-10 justify-center items-center flex-wrap'>
           
-          <div className='bg-white rounded-3xl'>
+          <div className='w-full sm:w-64 bg-white rounded-3xl'>
             <div className='w-full sm:w-64 px-4 py-6 h-96 flex flex-col justify-center items-center gap-3 rounded-3xl bg-black bg-opacity-95'>
               <div className='size-40'>
                 <Cardio/>
@@ -28,7 +28,7 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
             </div>
           </div>
 
-          <div className='bg-white rounded-3xl'>
+          <div className='w-full sm:w-64 bg-white rounded-3xl'>
             <div className='w-full sm:w-64 px-4 py-6 h-96 flex flex-col justify-center items-center gap-3 bg-black bg-opacity-95 rounded-3xl'>
               <div className='size-40'>
                 <PesoLibre/>
@@ -43,7 +43,7 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
             </div>
           </div >
 
-          <div className='bg-white rounded-3xl'>
+          <div className='w-full sm:w-64 bg-white rounded-3xl'>
             <div className='w-full sm:w-64 px-4 py-6 h-96 flex flex-col justify-center items-center gap-3 bg-black bg-opacity-95 rounded-3xl'>
               <div className='size-40'>
                 <Entrenador/>
@@ -58,7 +58,7 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
           </div>
 
 
-          <di className='bg-white rounded-3xl'>
+          <di className='w-full sm:w-64 bg-white rounded-3xl'>
             <div className='w-full sm:w-64 px-4 py-6 h-96 flex flex-col justify-center items-center gap-3 bg-black bg-opacity-95 rounded-3xl'>
               <div className='size-40'>
                 <Suplementos/>
