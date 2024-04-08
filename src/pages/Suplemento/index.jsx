@@ -102,7 +102,7 @@ function Suplemento() {
         <figure className='flex flex-col sm:w-auto self-center mb-8 2xl:mb-0 gap-2 sm:mr-6'>
 
           <div className='w-auto'>
-            <img className='size-full sm:size-[360px]  2xl:size-[520px] border shadow-sm animate-fade' src={product?.image[indexOfImageToShow]} alt="" />
+            <img className='size-full sm:size-[360px]  2xl:size-[500px] border shadow-sm animate-fade' src={product?.image[indexOfImageToShow]} alt="" />
           </div>
           <div className='flex flex-row justify-center'>
             {
@@ -116,7 +116,7 @@ function Suplemento() {
         <div className='flex flex-col sm:w-[320px] 2xl:w-[500px] sm:py-4'>
           <h1 className='text-2xl 2xl:text-4xl font-extrabold mb-2 text-pretty'>{product?.name} - {product?.brand}</h1>
           <h2 className='text-xl sm:text-2xl font-semibold mb-4 2xl:mb-8'>${product?.price} MXN</h2>
-          <p className='text-pretty sm:text-sm 2xl:text-2xl mb-12'>{product?.description}</p>
+          <p className='text-pretty sm:text-sm 2xl:text-xl mb-12'>{product?.description}</p>
           <div className='flex'>
             <div className='flex mr-4'>
               <button 
