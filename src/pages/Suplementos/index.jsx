@@ -1,80 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react'
-import SuplementCard from '../../components/SuplememtCard'
+import SuplementCard from '../../components/SuplementCard'
 import { ShopContext } from '../../context';
-
-const SUPLEMENTOS = [
-  {
-    id: 1,
-    name: "Venom",
-    price: 1500,
-    category: "Pre-entreno",
-    image : ""
-  },
-  {
-    id: 2,
-    name: "Neuromorfo",
-    price: 1500,
-    category: "Pre-entreno",
-    image : ""
-  },
-  {
-    id: 3,
-    name: "Isophorm",
-    price: 1500,
-    category: "Proteina",
-    image : ""
-  },
-  {
-    id: 4,
-    name: "Weyphorm",
-    price: 1500,
-    category: "Proteina",
-    image : ""
-  },
-  {
-    id: 5,
-    name: "Massphorm",
-    price: 1500,
-    category: "Proteina",
-    image : ""
-  },
-  {
-    id: 6,
-    name: "Mr. Veinz",
-    price: 1500,
-    category: "Pre-entreno",
-    image : ""
-  },
-  {
-    id: 7,
-    name: "ATP Force",
-    price: 1500,
-    category: "Creatina",
-    image : ""
-  },
-  {
-    id: 8,
-    name: "Creatine Monohydrate",
-    price: 1500,
-    category: "Creatina",
-    image : ""
-  },
-  {
-    id: 9,
-    name: "IsoJects Natural",
-    price: 1500,
-    category: "Proteina",
-    image : ""
-  },
-  {
-    id: 10,
-    name: "Evofusiom",
-    price: 1500,
-    category: "Proteina",
-    image : ""
-  }
-]
+import FilterBy from '../../components/FilterBy';
+import SortedBy from '../../components/SortedBy';
+import Footer from '../../components/Footer';
 
 function Suplementos() {
 
@@ -84,18 +14,27 @@ function Suplementos() {
   } = useContext(ShopContext);
 
   return (
-    <div className='w-full h-auto flex flex-col gap-10 mt-32 justify-center items-center'>
-      <input
-        type="text"
-        placeholder='Search Suplement'
-        className='w-80 p-3 mb-4 border border-secondarydark'
-        onChange={(event) => setSearchByName(event.target.value)}
-      />
-      <div className='w-full h-auto max-w-5xl flex flex-row flex-wrap gap-6 justify-center items-center'>
+    <div className='w-full h-auto flex flex-col gap-10 pt-32 pb-15 justify-center items-center'>
+      <div className='flex flex-col sm:flex-row gap-4 px-4 sm:px-0'>
+        <input
+          type="text"
+          placeholder='Buscar Suplemento'
+          className='w-80 p-3 border border-secondarydark'
+          onChange={(event) => setSearchByName(event.target.value)}
+        />
+        <div className='flex gap-4'>
+          <FilterBy/>
+          <SortedBy/>
+        </div>
+      </div>
+
+      <div className='w-full h-auto max-w-5xl flex flex-row flex-wrap gap-3 justify-center items-center mb-14 px-4 sm:px-0'>
         {filteredItems.map(suplement => (
-          <SuplementCard key={suplement.id} name={suplement.name} price={suplement.price} image={suplement.image} />
+          <SuplementCard key={suplement.id} id={suplement.id} name={suplement.name} description={suplement.description} category={suplement.category} brand={suplement.brand} price={suplement.price} image={suplement.image} />
         ))}
       </div>
+
+      <Footer/>
     </div>
   )
 }

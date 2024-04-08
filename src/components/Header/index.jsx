@@ -10,8 +10,8 @@ function Header() {
       <h1 className='text-primarylight text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold text-wrap animate-fade-down animate-once animate-ease-in-out'>
         <span className='text-wrap'>MUSCLE</span>
         <span 
-          className='text-transparent ml-3 xl:ml'
-          style={{ WebkitTextStroke: '3px #C1121F', textStroke: '3px #C1121F'}}
+          className='text-transparent ml-4 xl:ml'
+          style={{ WebkitTextStroke: '2px #C1121F', textStroke: '2px #C1121F'}}
         >
           FACTORY
         </span>
@@ -26,7 +26,7 @@ function Header() {
         ¡NO HAY EXCUSAS!
       </h3>
       <div className='flex gap-4 sm:gap-8 animate-fade-up animate-once animate-ease-in-out mt-5 flex-wrap'>
-        <PrimaryButton Icon={Suplement} text="Suplementos" path="/suplements"/>
+        <PrimaryButton Icon={Suplement} text="Suplementos" path="/suplementos"/>
         <PrimaryButton Icon={Calendar} text="Membresias" path="/membresias"/>
       </div>
     </div>

@@ -1,0 +1,26 @@
+.checkout-side-menu {
+  width: 300px;
+  height: calc(100vh - 56px);
+  top: 56px;
+}
+
+@media (max-width: 1024px) {
+  .checkout-side-menu {
+    width: 100%;
+    height: calc(100vh - 56px);
+    top: 56px;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-in-out;
+}

@@ -21,9 +21,9 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
               </div>
               <h4 className='text-2xl text-secondarylight font-bold '>Cardio</h4>
               <div className='flex flex-col justify-center items-center'>
-                <p className='text-white text-base font-medium text-center text-pretty'>- 10 Caminadoras</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- 6 Escaladoras</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- 8 Elípticas</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· 10 Caminadoras</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· 6 Escaladoras</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· 8 Elípticas</p>
               </div>
             </div>
           </div>
@@ -35,10 +35,10 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
               </div>
               <h4 className='text-2xl text-secondarylight font-bold '>Peso libre</h4>
               <div className='flex flex-col justify-center items-center'>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Peso libre</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Rack para sentadillas</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Equipo de peso libre</p>
-                <p className='text-white text-base font-medium text-center text-pretty '>- Mancuernas (5lbs-150lbs)</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Peso libre</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Rack para sentadillas</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Equipo de peso libre</p>
+                <p className='text-white text-base font-medium text-center text-pretty '>· Mancuernas (5lbs-150lbs)</p>
               </div>
             </div>
           </div >
@@ -50,28 +50,28 @@ Contamos con estacionamiento para motocicletas, baños privados, regaderas priva
               </div>
               <h4 className='text-2xl text-secondarylight font-bold '>Coaching</h4>
               <div className='flex flex-col justify-center items-center'>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Apoyo</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Demostración de ejercicios</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Supervisión</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Apoyo</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Demostración de ejercicios</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Supervisión</p>
               </div>
             </div>
           </div>
 
 
-          <di className='w-full sm:w-64 bg-white rounded-3xl'>
+          <div className='w-full sm:w-64 bg-white rounded-3xl'>
             <div className='w-full sm:w-64 px-4 py-6 h-96 flex flex-col justify-center items-center gap-3 bg-black bg-opacity-95 rounded-3xl'>
               <div className='size-40'>
                 <Suplementos/>
               </div>
               <h4 className='text-2xl text-secondarylight font-bold '>Suplementos</h4>
               <div className='flex flex-col justify-center items-center'>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Creatina</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Proteína</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Pre-entreno</p>
-                <p className='text-white text-base font-medium text-center text-pretty'>- Bebidas energéticas</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Creatina</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Proteína</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Pre-entreno</p>
+                <p className='text-white text-base font-medium text-center text-pretty'>· Bebidas energéticas</p>
               </div>
             </div>
-          </di>
+          </div>
 
 
         </div>
