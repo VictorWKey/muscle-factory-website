@@ -6,6 +6,8 @@ import Header from '../../components/Header'
 import SobreNosotros from '../../components/SobreNosotros'
 import PorQue from '../../components/PorQue'
 import Footer from '../../components/Footer'
+import Membresias from '../../components/Membresias'
+import Ubicacion from '../../components/Ubicacion'
 
 function Inicio() {
   
@@ -22,7 +24,11 @@ function Inicio() {
       <Header/>
       <SobreNosotros/>
       <PorQue/>
+      <Ubicacion/>
+      <Membresias/>
+
       <Footer/>
+      
     </div>
     
   )

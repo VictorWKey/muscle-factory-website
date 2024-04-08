@@ -46,7 +46,7 @@ function OrderCard({
   };
 
   const handleClick = (e) => {
-    if (!e.target.closest('.close')) {
+    if (!e.target.closest('.close') && !e.target.closest('.increment') && !e.target.closest('.decrement')) {
       // Not clicked on the add icon button
       // Redirect to the Link
       window.location.href = `/suplementos/${id}`;
@@ -63,11 +63,11 @@ function OrderCard({
           <img className='w-full h-full rounded-lg object-cover' src={imageUrl[0]} alt="" />
         </figure>
         <div className='flex flex-col gap-1'>
-          <p className='text-xs font-bold w-32'>{title}</p>
+          <p className='text-xs font-bold w-44 2xl:w-32'>{title}</p>
           <p className='text-sm font-light'>${price} MXN</p>
           <div className='flex flex-row items-center '>
             <button 
-              className='size-5 border border-gray-300 p-1 flex items-center justify-center hover:text-primarylight hover:border-primarylight' 
+              className='size-5 border border-gray-300 p-1 flex items-center justify-center hover:text-primarylight hover:border-primarylight decrement' 
               onClick={()=> {
                 handleDecrement(),
                 handleProductQuantity(id, false);
@@ -75,7 +75,7 @@ function OrderCard({
             >-</button>
             <p className='font-bold bg-white size-5 flex items-center justify-center border-y border-gray-300 text-xs'>{quantity}</p>
             <button 
-              className='size-5 border border-gray-300 p-1 flex items-center justify-center hover:text-green-600 hover:border-green-600' 
+              className='size-5 border border-gray-300 p-1 flex items-center justify-center hover:text-green-600 hover:border-green-600 increment' 
               onClick={()=> {
                 handleIncrement(),
                 handleProductQuantity(id, true);

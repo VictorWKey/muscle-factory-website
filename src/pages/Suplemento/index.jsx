@@ -16,7 +16,8 @@ function Suplemento() {
     cartProducts,
     setCartProducts,
     setIsNotiCartOpen,
-    openCheckoutSideMenu
+    openCheckoutSideMenu,
+    isCheckoutSideMenuOpen
   } = useContext(ShopContext);
 
   const {
@@ -40,6 +41,7 @@ function Suplemento() {
   };
 
   const addProductToCart = (event) => {
+    setValue(1);
     event.stopPropagation();
 
     const searchProductInCartProducts = cartProducts.filter(item => item.id == product?.id);
@@ -80,17 +82,15 @@ function Suplemento() {
       if(!isMobile){
         openCheckoutSideMenu();
       } else {
-        setIsNotiCartOpen(true);
+        if(!isCheckoutSideMenuOpen){
+          setIsNotiCartOpen(true);
   
-        setTimeout(() => {
-          // Código que deseas ejecutar después de unos segundos
-          setIsNotiCartOpen(false);
-        }, 2000);
+          setTimeout(() => {
+            // Código que deseas ejecutar después de unos segundos
+            setIsNotiCartOpen(false);
+          }, 3000);
+        }
       }
-
-      setTimeout(() => {
-        setIsNotiCartOpen(false);
-      }, 2000);
     }
 
   }
@@ -102,7 +102,7 @@ function Suplemento() {
         <figure className='flex flex-col sm:w-auto self-center mb-8 2xl:mb-0 gap-2 sm:mr-6'>
 
           <div className='w-auto'>
-            <img className='size-full sm:size-[360px]  2xl:size-[500px] border shadow-sm animate-fade' src={product?.image[indexOfImageToShow]} alt="" />
+            <img className='size-full sm:size-[360px] 2xl:size-[500px] border shadow-sm animate-fade object-cover' src={product?.image[indexOfImageToShow]} alt="" />
           </div>
           <div className='flex flex-row justify-center'>
             {

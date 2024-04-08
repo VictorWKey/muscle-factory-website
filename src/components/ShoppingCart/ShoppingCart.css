@@ -1,5 +1,5 @@
 .checkout-side-menu {
-  width: 300px;
+  width: 390px;
   height: calc(100vh - 56px);
   top: 56px;
 }
@@ -7,6 +7,14 @@
 @media (max-width: 1024px) {
   .checkout-side-menu {
     width: 100%;
+    height: calc(100vh - 56px);
+    top: 56px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .checkout-side-menu {
+    width: 300px;
     height: calc(100vh - 56px);
     top: 56px;
   }

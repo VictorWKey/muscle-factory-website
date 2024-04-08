@@ -3,7 +3,6 @@ import { ShopProvider } from '../../context';
 import Inicio from '../Inicio';
 import Entrenamientos from '../Entrenamientos';
 import Suplementos from '../Suplementos';
-import Membresias from '../Membresias';
 import Contacto from '../Contacto';
 import Pedido from '../Pedido';
 import NotFound from '../NotFound';
@@ -19,7 +18,6 @@ const AppRoutes = () => {
     {path: '/entrenamientos', element: <Entrenamientos />},
     {path: '/suplementos/:id', element: <Suplemento />},
     {path: '/suplementos', element: <Suplementos />},
-    {path: '/membresias', element: <Membresias />},
     {path: '/contacto', element: <Contacto />},
     {path: '/pedido', element: <Pedido />},
     {path: '/*', element: <NotFound />},

@@ -15,7 +15,8 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
     cartProducts,
     setCartProducts,
     openCheckoutSideMenu,
-    setIsNotiCartOpen
+    setIsNotiCartOpen,
+    isCheckoutSideMenuOpen
   }= useContext(ShopContext);
 
   const isMobile = useMediaQuery('(max-width: 1280px)');
@@ -59,12 +60,14 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
     if(!isMobile){
       openCheckoutSideMenu();
     } else {
-      setIsNotiCartOpen(true);
+      if(!isCheckoutSideMenuOpen){
+        setIsNotiCartOpen(true);
 
-      setTimeout(() => {
-        // Código que deseas ejecutar después de unos segundos
-        setIsNotiCartOpen(false);
-      }, 2000);
+        setTimeout(() => {
+          // Código que deseas ejecutar después de unos segundos
+          setIsNotiCartOpen(false);
+        }, 3000);
+      }
     }
 
 

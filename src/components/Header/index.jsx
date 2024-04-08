@@ -15,6 +15,9 @@ function Header() {
         >
           FACTORY
         </span>
+        {/* <figure className='ml-0 size-16 z-50 hover:cursor-pointer'>
+            <img className='size-full object-cover' src="../../../public/img/musclefactory/muscle-factory-logo-recortado.png" alt="" />
+        </figure> */}
       </h1>
       <h2 className='text-white font-extrabold text-base sm:text-2xl xl:text-3xl 2xl:text-4xl animate-fade-down animate-once animate-ease-in-out text-wrap'>GIMNASIO Y TIENDA DE SUPLEMENTOS</h2>
 
@@ -27,7 +30,12 @@ function Header() {
       </h3>
       <div className='flex gap-4 sm:gap-8 animate-fade-up animate-once animate-ease-in-out mt-5 flex-wrap'>
         <PrimaryButton Icon={Suplement} text="Suplementos" path="/suplementos"/>
-        <PrimaryButton Icon={Calendar} text="Membresias" path="/membresias"/>
+        <a href='#membresias' className='flex gap-1 items-center justify-center text-white font-semibold bg-primarylight rounded py-2 px-4 sm:px-8 transition duration-300 ease-in-out hover:bg-primarydark hover:scale-110'>
+          <div className='size-5 flex justify-center items-center'>
+            <Calendar/>
+          </div>
+          <p>Membresias</p>
+        </a>
       </div>
     </div>
   )
