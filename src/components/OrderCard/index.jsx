@@ -45,8 +45,19 @@ function OrderCard({
     setCartProducts(updatedCartProducts);
   };
 
+  const handleClick = (e) => {
+    if (!e.target.closest('.close')) {
+      // Not clicked on the add icon button
+      // Redirect to the Link
+      window.location.href = `/suplementos/${id}`;
+    }
+  };
+
   return (
-    <div className='flex justify-between items-center w-full bg-gray-100 p-3 mb-3 rounded-lg shadow-md h-28 animate-fade-up animate-once'>
+    <div 
+      className='flex justify-between items-center w-full bg-gray-100 p-3 mb-3 rounded-lg shadow-md h-28 animate-fade-up animate-once cursor-pointer'
+      onClick={handleClick}
+    >
       <div className='flex gap-2 items-center'>
         <figure className='h-14 w-14'>
           <img className='w-full h-full rounded-lg object-cover' src={imageUrl[0]} alt="" />
@@ -74,7 +85,7 @@ function OrderCard({
         </div>
         
       </div>
-      <div className='flex gap-2 items-center'>
+      <div className='flex gap-2 items-center close'>
         
         {handleDelete
             ?

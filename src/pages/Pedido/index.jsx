@@ -3,9 +3,12 @@ import React, { useContext, useRef } from 'react'
 import PedidoCard from '../../components/PedidoCard'
 import { ShopContext } from '../../context';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from '@react-hook/media-query';
 
 function Pedido() {
   const form = useRef(null);
+
+  const isMobile = useMediaQuery('(max-width: 	640px)');
 
   const {
     cartProducts,
@@ -37,7 +40,7 @@ function Pedido() {
       const subtotal = cartProducts.reduce((acc, item) => acc + item.price, 0);
       const total = subtotal;
 
-      const orderSummary = `
+      const orderSummary = isMobile ? `
 👋 Hola que tal, soy ${completeName} y mi pedido es el siguiente:
       
 ${cartItems}
@@ -51,7 +54,22 @@ Total: $${total.toFixed(2)}
 ${completeName}, tu pedido se está preparando con atencion y cuidado.
 
 ¡Muchas Gracias! 🚀
+` : `
+Hola que tal, soy ${completeName} y mi pedido es el siguiente:
+      
+${cartItems}
+
+Total: $${total.toFixed(2)}
+
+Pagaré con: ${payWith} con ${paymentMethod}
+
+Pasaré a recoger en ${pickUp}
+
+${completeName}, tu pedido se está preparando con atencion y cuidado.
+
+¡Muchas Gracias! 
 `;
+
       const encodedOrder = encodeURIComponent(orderSummary)
       const whatsappLink = `https://wa.me/524622574618?text=${encodedOrder}`;
 
@@ -64,7 +82,7 @@ ${completeName}, tu pedido se está preparando con atencion y cuidado.
 
   return (
     <section className='my-28 w-full flex items-center justify-center'>
-      <div className='w-full max-w-xl flex flex-col justify-center items-center p-3'>
+      <div className='w-full max-w-xl flex flex-col justify-center items-center p-6'>
         <h1 className='text-3xl font-bold mb-4'>Resumen del pedido</h1>
         <div className='flex flex-col w-full'>
           {cartProducts.length === 0 ? (<p className='self-center font-light text-sm text-gray-400'>No hay productos agregados</p>) : undefined}

@@ -99,19 +99,20 @@ function NavBar() {
             isCheckoutSideMenuOpen ? closeCheckoutSideMenu(): openCheckoutSideMenu()
           }}
         >
-          <div className='relative cursor-pointer group'>
+          <div className='relative cursor-pointer group mr-4'>
             <ShoppingCartIcon className={`size-6 group-hover:text-primarylight transition duration-300 ease-linear ${isCheckoutSideMenuOpen ? "text-primarylight" : "text-white"}`}/>
             <p className='absolute font-bold text-white text-xs bg-primarylight size-5 flex items-center justify-center rounded-full -top-2 -right-2'>{totalProducts(cartProducts)}</p>
 
-          </div>         
+          </div>    
+          {
+            totalPriceCartProducts > 0 
+              ?
+            (<p className='text-white text-sm hidden sm:block'>${totalPriceCartProducts}</p>)
+              :
+            undefined
+          }     
         </div>
-        {
-          totalPriceCartProducts > 0 
-            ?
-          (<p className='text-white text-sm hidden sm:block'>${totalPriceCartProducts}</p>)
-            :
-          undefined
-        }
+
       </div>
     </nav>
   )
