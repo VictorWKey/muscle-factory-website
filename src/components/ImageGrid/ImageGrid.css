@@ -1,0 +1,18 @@
+.parent {
+display: grid;
+grid-template-columns: repeat(16, 64px);
+grid-template-rows: repeat(32, 32px);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 12 / 18 / 17; }
+.div2 { grid-area: 1 / 1 / 15 / 12; }
+.div3 { grid-area: 15 / 1 / 23 / 8; }
+.div4 { grid-area: 18 / 12 / 24 / 17; }
+.div5 { grid-area: 23 / 4 / 27 / 8; }
+.div6 { grid-area: 23 / 1 / 33 / 4; }
+.div7 { grid-area: 27 / 4 / 33 / 10; }
+.div8 { grid-area: 15 / 8 / 27 / 12; }
+.div9 { grid-area: 27 / 10 / 33 / 12; }
+.div10 { grid-area: 24 / 12 / 33 / 17; }

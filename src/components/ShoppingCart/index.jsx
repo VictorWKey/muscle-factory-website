@@ -23,7 +23,7 @@ function ShoppingCart() {
   }
 
   return (
-    <aside className={`${isCheckoutSideMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex checkout-side-menu flex-col fixed right-0 bg-white border-l shadow-xl transition-transform duration-300`}>
+    <aside className={`${isCheckoutSideMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex checkout-side-menu flex-col fixed right-0 bg-white border-l shadow-xl transition-transform duration-300 z-[2]`}>
       <div className='flex justify-between items-center p-6'>
         <h2 className='font-medium text-xl '>Carrito de compras</h2>
         <XMarkIcon

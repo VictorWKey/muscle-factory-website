@@ -19,7 +19,7 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
     isCheckoutSideMenuOpen
   }= useContext(ShopContext);
 
-  const isMobile = useMediaQuery('(max-width: 1280px)');
+  const isMobile = useMediaQuery('(max-width: 1536px)');
 
   const handleDelete = (id) => {
     const filteredProducts = cartProducts.filter(product => product.id != id);

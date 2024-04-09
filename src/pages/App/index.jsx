@@ -11,6 +11,7 @@ import MovilMenu from '../../components/MovilMenu';
 import ShoppingCart from '../../components/ShoppingCart';
 import Suplemento from '../Suplemento';
 import CartNoti from '../../components/CartNoti';
+import WhatsAppGreen from '../../components/icons/WhatsAppGreen';
 
 const AppRoutes = () => {
   return useRoutes([
@@ -33,6 +34,7 @@ export default function App() {
         <MovilMenu/>
         <ShoppingCart/>
         <CartNoti/>
+        <WhatsAppGreen/>
       </BrowserRouter>
     </ShopProvider>
   )

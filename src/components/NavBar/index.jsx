@@ -13,6 +13,7 @@ function NavBar() {
   const {
     cartProducts,
     openCheckoutSideMenu,
+    
     closeCheckoutSideMenu,
     isCheckoutSideMenuOpen,
     setSearchByTitle,

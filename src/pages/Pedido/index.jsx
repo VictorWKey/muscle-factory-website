@@ -9,7 +9,7 @@ import { totalPrice } from '../../utils';
 function Pedido() {
   const form = useRef(null);
 
-  const isMobile = useMediaQuery('(max-width: 	640px)');
+  const isMobile = useMediaQuery('(max-width: 1536px)');
 
   const {
     cartProducts,

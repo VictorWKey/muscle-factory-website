@@ -16,7 +16,10 @@ export const ShopProvider = ({children}) => {
   const [isCheckoutSideMenuOpen, setIsCheckoutSideMenuOpen] = useState(false);
   const [isNotiCartOpen, setIsNotiCartOpen] = useState(false);
 
-  const openCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(true);
+  const openCheckoutSideMenu = () => {
+    setIsNotiCartOpen(false),
+    setIsCheckoutSideMenuOpen(true)
+  };
   const closeCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(false);
 
   const SUPLEMENTOS = [

@@ -12,7 +12,7 @@ function CartNoti() {
 
 
   return (
-    <section className={`${isNotiCartOpen ? 'translate-y-0 shadow-md ' : '-translate-y-full shadow-md'} rounded-md w-full sm:w-auto fixed z-[9] top-[56px] right-0 bg-white transition-transform duration-300`}>
+    <section className={`${isNotiCartOpen ? 'translate-y-0 shadow-md ' : '-translate-y-full shadow-md'} rounded-md w-full sm:w-[390px] fixed z-[9] top-[56px] right-0 bg-white transition-transform duration-300`}>
       <div className="p-8 text-center">
         <h2 className=" font-bold">¡Producto agregado al carrito correctamente!</h2>
 
