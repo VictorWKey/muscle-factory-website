@@ -4,6 +4,7 @@ import PedidoCard from '../../components/PedidoCard'
 import { ShopContext } from '../../context';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from '@react-hook/media-query';
+import { totalPrice } from '../../utils';
 
 function Pedido() {
   const form = useRef(null);
@@ -12,8 +13,6 @@ function Pedido() {
 
   const {
     cartProducts,
-    setCartProducts,
-
   } = useContext(ShopContext);
 
   const onSendOrder = () => {
@@ -98,6 +97,10 @@ ${completeName}, tu pedido se está preparando con atencion y cuidado.
               />
             ))
           }
+          <div className='flex justify-between px-6 mt-2'>
+            <p >Total:</p>
+            <p className='font-bold'>${totalPrice(cartProducts)} MXN</p>
+          </div>
         </div>
 
         <div className='w-full flex flex-col'>

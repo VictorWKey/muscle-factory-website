@@ -6,7 +6,7 @@ function SobreNosotros() {
     <section className='w-full h-auto flex justify-center items-center py-10 xl:py-0 px-6 lg:px-0  bg-black bg-opacity-95'>
       <div className='w-full h-full flex flex-col lg:flex-row justify-center items-center'>
 
-        <div className='flex flex-col sm:pl-6 justify-center items-center lg:w-1/2'>
+        <div className='flex flex-col lg:px-8 justify-center items-center lg:w-1/2'>
 
           <h1 className='text-primarylight text-3xl sm:text-4xl xl:text-4xl font-bold mb-4 lg:mt-0 self-start'>Sobre nosotros</h1>
 
@@ -17,7 +17,7 @@ function SobreNosotros() {
         </div>
 
         <div className='flex lg:w-1/2 h-full items-center justify-center'>
-          <img className='object-cover' src="../../../public/img/musclefactory/sobre-nosotros-3.jpg" alt="" />
+          <img className='object-cover' src="../../../public/img/musclefactory/sobre-nosotros-4.jpg" alt="" />
         </div>
 
       </div>

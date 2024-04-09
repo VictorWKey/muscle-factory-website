@@ -5,6 +5,7 @@ import { ShopContext } from '../../context';
 import Menu from '../icons/Menu';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 import { totalProducts } from '../../utils';
+import WhatsApp from '../icons/WhatsApp';
 
 
 function NavBar() {
@@ -40,7 +41,7 @@ function NavBar() {
             <img className='size-full object-cover' src="../../../public/img/musclefactory/muscle-factory-logo.png" alt="" />
           </figure>
         </Link>
-        <ul className="hidden lg:flex justify-center gap-6 md:gap-8 items-center pl-4">
+        <ul className="hidden lg:flex justify-center gap-6 md:gap-8 items-center pl-6">
           <li>
             <a
               href="https://www.facebook.com/profile.php?id=100063471193891&sk=photos "
@@ -74,6 +75,18 @@ function NavBar() {
                   clipRule="evenodd"
                 />
               </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=524622574618&text&type=phone_number&app_absent=0"
+              rel="noreferrer"
+              target="_blank"
+              className="text-white transition hover:text-primarylight"
+            >
+              <span className="sr-only">WhatsApp</span>
+              <WhatsApp/>
             </a>
           </li>
         </ul>
@@ -114,12 +127,12 @@ function NavBar() {
         </ul>
         
         <div 
-          className='flex items-center cursor-pointer'
+          className='flex items-center cursor-pointer group '
           onClick={() => {
             isCheckoutSideMenuOpen ? closeCheckoutSideMenu(): openCheckoutSideMenu()
           }}
         >
-          <div className='relative cursor-pointer group mr-4'>
+          <div className='relative cursor-pointer sm:mr-4'>
             <ShoppingCartIcon className={`size-6 group-hover:text-primarylight transition duration-300 ease-linear ${isCheckoutSideMenuOpen ? "text-primarylight" : "text-white"}`}/>
             <p className='absolute font-bold text-white text-xs bg-primarylight size-5 flex items-center justify-center rounded-full -top-2 -right-2'>{totalProducts(cartProducts)}</p>
 

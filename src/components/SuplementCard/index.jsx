@@ -86,7 +86,7 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
   return (
 
     <div 
-      className="w-full sm:w-56 group flex-col overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer"
+      className="w-full sm:w-56 group flex-col overflow-hidden shadow-md sm:shadow-none hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer"
       onClick={handleClick}
     >
 
