@@ -86,7 +86,7 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
   return (
 
     <div 
-      className="w-full sm:w-56 group flex-col overflow-hidden shadow-md sm:shadow-none hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer"
+      className="w-full sm:w-56 group flex-col overflow-hidden shadow-md sm:shadow-nonenpm ru hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer"
       onClick={handleClick}
     >
 
@@ -103,9 +103,9 @@ function SuplementCard({id, name, description, brand, price, category, image, sa
       <div className="flex flex-col justify-between border border-gray-100 bg-white p-4 h-52">
         {/* <span className="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium"> New </span> */}
         <div className='flex flex-col'>
-          <h3 className="text-base font-bold text-gray-900">{name} - {brand}</h3>
+          <h3 className="text-base font-extrabold text-gray-900">{name} - {brand}</h3>
 
-          <p className="mt-1.5 text-base text-gray-700">${price} MXN</p>     
+          <p className="mt-1.5 text-base text-gray-700 font-medium">${price} MXN</p>     
           <p className='text-xs font-light h-10 truncate text-gray-500 mt-2'>{description}</p>
           
         </div>

@@ -1,9 +1,26 @@
 .parent {
-display: grid;
-grid-template-columns: repeat(16, 64px);
-grid-template-rows: repeat(32, 32px);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(16, 18px);
+  grid-template-rows: repeat(32, 9px);
+  gap: 5px;
+}
+
+@media (min-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(16, 34px);
+    grid-template-rows: repeat(32, 16px);
+    gap: 12px;
+  }
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (min-width: 1280px) {
+  .parent {
+    grid-template-columns: repeat(16, 53px);
+    grid-template-rows: repeat(32, 26px);
+    gap: 12px;
+  }
 }
 
 .div1 { grid-area: 1 / 12 / 18 / 17; }
@@ -16,3 +33,11 @@ grid-row-gap: 0px;
 .div8 { grid-area: 15 / 8 / 27 / 12; }
 .div9 { grid-area: 27 / 10 / 33 / 12; }
 .div10 { grid-area: 24 / 12 / 33 / 17; }
+
+.parent img {
+  transition: transform 0.3s ease;
+}
+
+.parent img:hover {
+  transform: scale(1.1);
+}

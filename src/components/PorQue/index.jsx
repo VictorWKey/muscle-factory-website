@@ -9,7 +9,7 @@ function PorQue() {
   return (
     <section className='w-full h-auto flex justify-center items-center py-16 sm:py-20 px-5 sm:px-16  bg-primarylight'>
       <div className='w-full max-w-6xl flex flex-col justify-center items-center gap-8'>
-        <h1 className='text-white text-center text-3xl sm:text-4xl xl:text-4xl 2xl:text-5xl font-extrabold sm:mt-0'>¿Por qué Muscle Factory?</h1>
+        <h1 className='text-white text-center text-3xl sm:text-4xl xl:text-4xl 2xl:text-5xl font-extrabold sm:mt-0'>¿POR QUÉ MUSCLE FACTORY?</h1>
         <p className='text-white font-medium text-xl text-pretty'>
 Contamos con estacionamiento para motocicletas, baños privados, regaderas privadas y tienda de suplementos.</p>
         <div className='w-full flex flex-col sm:flex-row gap-6 justify-center items-center flex-wrap'>

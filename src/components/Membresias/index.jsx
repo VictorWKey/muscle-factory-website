@@ -5,7 +5,7 @@ function Membresias() {
   return (
     <section id='membresias' className='w-full py-16 sm:py-20 px-6 flex justify-center items-center bg-white'>
       <div className='flex flex-col w-full justify-center items-center gap-6 max-w-5xl'>
-        <h1 className='text-primarylight text-4xl font-extrabold sm:mt-0 self-center'>Membresias</h1>
+        <h1 className='text-primarylight text-4xl font-extrabold sm:mt-0 self-center'>MEMBRESIAS</h1>
         <p className='font-medium text-xl'>Todas las membresías ofrecen los mismos beneficios, incluyendo acceso a baños, regaderas, vestidores, máquinas, áreas de cardio, pesas y estacionamiento para motos.</p>
         <div className='flex flex-col flex-wrap w-full md:flex-row gap-6 justify-center'>
           <div className='w-full sm:w-56 py-12 sm:py-8 px-6 border-2 border-primarylight flex flex-col gap-3 rounded-3xl bg-white  items-center shadow-xl h-auto'>
