@@ -116,7 +116,7 @@ function Entrenamientos() {
 
         {/* GALERIA */}
         <div className='my-16 sm:my-16 flex justify-center items-center flex-col'>
-          <h1 className=' text-primarylight text-3xl sm:text-5xl font-extrabold sm:mt-0 self-center mb-6'>CREANDO ATLETAS</h1>
+          <h1 className=' text-primarylight text-4xl sm:text-7xl font-extrabold sm:mt-0 self-center mb-6'>CREANDO ATLETAS</h1>
           <ImageGrid/>
         </div>
 
