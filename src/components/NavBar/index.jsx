@@ -39,7 +39,7 @@ function NavBar() {
       <div className='flex'>
         <Link to="/" onClick={() => setSearchByTitle('')}>
           <figure className='ml-0 lg:ml-2 size-14 p-2 z-50 hover:cursor-pointer'>
-            <img className='size-full object-cover' src="../../../public/img/musclefactory/muscle-factory-logo.png" alt="" />
+            <img className='size-full object-cover' src="../../../img/musclefactory/muscle-factory-logo.png" alt="" />
           </figure>
         </Link>
         <ul className="hidden lg:flex justify-center gap-6 md:gap-8 items-center pl-6">

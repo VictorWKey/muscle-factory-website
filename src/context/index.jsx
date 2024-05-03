@@ -31,7 +31,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 600,
       category: "Pre-entreno",
-      image : ["../../public/img/suplements/venom-1.webp"],
+      image : ["../../img/suplements/venom-1.webp"],
       sales: 35
     },
     {
@@ -41,7 +41,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 600,
       category: "Pre-entreno",
-      image : ["../../public/img/suplements/neuromorfo-1.webp"],
+      image : ["../../img/suplements/neuromorfo-1.webp"],
       sales: 2
     },
     {
@@ -51,7 +51,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 2100,
       category: "Proteina",
-      image : ["../../public/img/suplements/isophorm-1.webp"],
+      image : ["../../img/suplements/isophorm-1.webp"],
       sales: 89
     },
     {
@@ -61,7 +61,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 1870,
       category: "Proteina",
-      image : ["../../public/img/suplements/wheyphorm-1.webp"],
+      image : ["../../img/suplements/wheyphorm-1.webp"],
       sales: 42
     },
     {
@@ -71,7 +71,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 2500,
       category: "Proteina",
-      image : ["../../public/img/suplements/massphorm-1.webp"],
+      image : ["../../img/suplements/massphorm-1.webp"],
       sales: 49
     },
     {
@@ -81,7 +81,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 600,
       category: "Pre-entreno",
-      image : ["../../public/img/suplements/mrbeinz-1.webp"],
+      image : ["../../img/suplements/mrbeinz-1.webp"],
       sales: 21
     },
     {
@@ -91,7 +91,7 @@ export const ShopProvider = ({children}) => {
       brand: "Dragon Pharma",
       price: 700,
       category: "Creatina",
-      image : ["../../public/img/suplements/atpforce-1.webp"],
+      image : ["../../img/suplements/atpforce-1.webp"],
       sales: 7
     },
     {
@@ -102,7 +102,7 @@ export const ShopProvider = ({children}) => {
       price: 1000,
       category: "Creatina",
       image : [
-        ["../../public/img/suplements/creatine-1.webp"]
+        ["../../img/suplements/creatine-1.webp"]
       ],
       sales: 12
     },
@@ -113,7 +113,7 @@ export const ShopProvider = ({children}) => {
       brand: "Evogen",
       price: 1900,
       category: "Proteina",
-      image : ["../../public/img/suplements/isoject-1.webp", "../../public/img/suplements/isoject-2.webp"],
+      image : ["../../img/suplements/isoject-1.webp", "../../img/suplements/isoject-2.webp"],
       sales: 32
     },
     {
@@ -123,7 +123,7 @@ export const ShopProvider = ({children}) => {
       brand: "Evogen",
       price: 1200,
       category: "Proteina",
-      image : ["../../public/img/suplements/evofusion-1.webp"],
+      image : ["../../img/suplements/evofusion-1.webp"],
       sales: 46
     }
   ];

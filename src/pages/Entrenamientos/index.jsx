@@ -12,7 +12,7 @@ function Entrenamientos() {
           <div className='sm:pl-6 xl:p-0'>
             <figure className="size-72 xl:size-[340px] 2xl:size-[420px] rounded-full  overflow-hidden">
               <img
-                src="../../../public/img/entrenamientos/oscar-1.png"
+                src="../../../img/entrenamientos/oscar-1.png"
                 alt="Foto de Victor"
                 className="object-cover size-full "
               />

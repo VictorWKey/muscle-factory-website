@@ -16,7 +16,7 @@ function Header() {
           FACTORY
         </span>
         {/* <figure className='ml-0 size-16 z-50 hover:cursor-pointer'>
-            <img className='size-full object-cover' src="../../../public/img/musclefactory/muscle-factory-logo-recortado.png" alt="" />
+            <img className='size-full object-cover' src="../../../img/musclefactory/muscle-factory-logo-recortado.png" alt="" />
         </figure> */}
       </h1>
       <h2 className='text-white font-extrabold text-base sm:text-2xl xl:text-3xl 2xl:text-4xl animate-fade-down animate-once animate-ease-in-out text-wrap'>GIMNASIO Y TIENDA DE SUPLEMENTOS</h2>
