@@ -8,7 +8,7 @@ function Footer() {
   <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="flex justify-center text-teal-600">
       <figure className='size-28 hover:cursor-pointer'>
-        <img className='size-full object-cover' src="../../../img/musclefactory/muscle-factory-logo.png" alt="" />
+        <img className='size-full object-cover' src="/img/musclefactory/muscle-factory-logo.png" alt="" />
       </figure>
     </div>
 

@@ -22,7 +22,7 @@ function MovilMenu() {
         <div className='h-auto'>
           <Link to="/" >
             <figure className='ml-0 lg:ml-2 size-14 z-50 hover:cursor-pointer'>
-              <img className='size-full object-cover' src="../../../img/musclefactory/muscle-factory-logo.png" alt="" />
+              <img className='size-full object-cover' src="/img/musclefactory/muscle-factory-logo.png" alt="" />
             </figure>
           </Link>
         </div>

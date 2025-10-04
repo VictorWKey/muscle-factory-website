@@ -17,7 +17,7 @@ function SobreNosotros() {
         </div>
 
         <div className='flex lg:w-1/2 h-full items-center justify-center'>
-          <img className='object-cover' src="../../../img/musclefactory/sobre-nosotros-4.jpg" alt="" />
+          <img className='object-cover' src="/img/musclefactory/sobre-nosotros-4.jpg" alt="" />
         </div>
 
       </div>
