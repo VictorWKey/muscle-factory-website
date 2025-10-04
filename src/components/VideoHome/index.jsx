@@ -3,17 +3,14 @@ import React from 'react';
 
 function VideoHome() {
   return (
-    <video
-      autoPlay
-      muted
-      loop
-      className="flex justify-center items-center w-full h-screen object-cover absolute z-[-2] top-0"
-
-    >
-      <source src="/img/musclefactory/home-video.mp4" type="video/mp4" />
-      Tu navegador no admite la etiqueta de video.
-      
-    </video>
+    <div className="absolute z-[-2] top-0 w-full h-screen">
+      <img
+        src="/img/musclefactory/home-imagen.png"
+        alt="Muscle Factory Gym Background"
+        className="w-full h-full object-cover"
+        loading="eager"
+      />
+    </div>
   );
 }
 
